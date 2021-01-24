@@ -1,4 +1,4 @@
-import { countLetters, countSpaces, everyOtherLetter, reverseIt } from './strings-utils.js';
+import { countLetters, countSpaces, everyOtherLetter, reverseIt, wordCount } from './strings-utils.js';
 
 const exerciseButton1 = document.getElementById('submit1');
 const input1 = document.getElementById('input1');
@@ -15,6 +15,10 @@ const answer3 = document.getElementById('exercise-box-3');
 const exerciseButton4 = document.getElementById('submit4');
 const input4 = document.getElementById('input4');
 const answer4 = document.getElementById('exercise-box-4'); 
+
+const exerciseButton5 = document.getElementById('submit5');
+const input5 = document.getElementById('input5'); 
+const answer5 = document.getElementById('exercise-box-5');
 
 
 exerciseButton1.addEventListener('click', () => { 
@@ -35,8 +39,13 @@ exerciseButton3.addEventListener('click', () => {
 
 exerciseButton4.addEventListener('click', () => {
 
-    console.log('im in the button');
+  
     answer4.innerHTML += reverseIt(input4);
 });
 
+exerciseButton5.addEventListener('click', () => {
+  
+
+    answer5.innerHTML += wordCount(input5);
+});
 

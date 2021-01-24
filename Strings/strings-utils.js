@@ -36,5 +36,10 @@ export function reverseIt(input4) {
     }
 
     return result;
+}
 
+export function wordCount(input5) {
+    const count = input5.value; 
+    
+    return count.trim().split(/\s+/).length; //why does this work??
 }
