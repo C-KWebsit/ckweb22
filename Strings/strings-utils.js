@@ -17,11 +17,24 @@ export function countSpaces(input2) {
 
 export function everyOtherLetter(input3) {
     const letters = input3.value; 
+    let result = '';
     
     for (let i = 0; i < letters.length; i = i + 2) { 
-        
+        result += letters[i];
         console.log((letters[i]));
     }
 
-    return letters;
+    return result;
+}
+
+export function reverseIt(input4) {
+    const word = input4.value; 
+    let result = '';
+
+    for (let i = word.length - 1; i >= 0; i --) {
+        result += word[i];
+    }
+
+    return result;
+
 }
