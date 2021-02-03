@@ -53,3 +53,15 @@ export function genAcrostic(input3) {
     return empArr;
 }
 
+export function gen5rdNumber() { 
+
+    const twentyArray = new Array(20);
+    let randArray = [];
+    
+    for (let i = 0; i < twentyArray.length; i++) {
+        randArray.push(Math.floor(Math.random() * 100));
+    }
+    let smallestNum = Math.min.apply(Math, randArray);
+
+    return [randArray, smallestNum];  
+}
