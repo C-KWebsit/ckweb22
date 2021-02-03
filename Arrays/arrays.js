@@ -1,4 +1,4 @@
-import { arrayElements, oddIndex, genAcrostic } from './array-utils.js';
+import { arrayElements, oddIndex, genAcrostic, gen5rdNumber } from './array-utils.js';
 import alphabetSoup from '../data.js';
 
 
@@ -14,6 +14,15 @@ const exerciseButton3 = document.getElementById('submit3');
 const input3 = document.getElementById('input3');
 const answer3 = document.getElementById('exercise-box-3');
 
+const exerciseButton4 = document.getElementById('submit4');
+const input4 = document.getElementById('input4');
+const answer4 = document.getElementById('exercise-box-4');
+
+const exerciseButton5 = document.getElementById('submit5');
+const input5 = document.getElementById('input5');
+const answer5 = document.getElementById('exercise-box-5');
+
+
 exerciseButton1.addEventListener('click', () => { 
     // console.log('im in the buttonw!');
 
@@ -28,8 +37,18 @@ exerciseButton2.addEventListener('click', () => {
 });
 
 exerciseButton3.addEventListener('click', () => {
-    const acrostic = alphabetSoup;
+    
     // console.log(acrostic);
 
     answer3.textContent += genAcrostic(input3);
+});
+
+
+
+
+
+exerciseButton5.addEventListener('click', () => { 
+    let res = gen5rdNumber();
+
+    answer5.textContent += `${res[0]} and the smallest number of this array is ${res[1]}`;
 });
