@@ -20,12 +20,12 @@ export const arr2 = [
 
 
 export const arr3 = [
-    ['This is some array with an array'],
-    ['This is some array within an array at index 1'],
-    ['This is some index within an array and well you get the point'],
+    [22, 345, 34, 3, 1],
+    [54, 6, 7, 3, 4],
+    [99, 5, 6, 3, 22, 21],
     [1, 2, 3, 4, 5, 6, 7, 8, 9],
-    ['It should be obvious now that you can have different data type in an array although it is not good practice'],
-    ['When you create your own data structures it is best practice to use the same data types within that array']
+    [34, 4, 64, 76, 67],
+    [2, 4, 5, 9, 0, 8]
 ];
 
 export const arr4 = [
