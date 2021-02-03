@@ -24,7 +24,7 @@ booButton.addEventListener('click', () => {
 
 });
 arrButton.addEventListener('click', () => {
-    console.log('im in the button');
+    document.location.href = 'Arrays/array.html';
 });
 
 objButton.addEventListener('click', () => {
