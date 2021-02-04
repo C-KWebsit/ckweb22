@@ -1,4 +1,4 @@
-import { arrayElements, oddIndex, genAcrostic, gen5rdNumber } from './array-utils.js';
+import { arrayElements, oddIndex, genAcrostic, genLowestNumber, gen5rdElement } from './array-utils.js';
 import alphabetSoup from '../data.js';
 
 
@@ -42,13 +42,16 @@ exerciseButton3.addEventListener('click', () => {
 
     answer3.textContent += genAcrostic(input3);
 });
+exerciseButton4.addEventListener('click', () => {
 
+    let res = gen5rdElement();
 
-
+    answer4.textContent += `In the array of ${res[0]} the fifth element is ${res[1]}`;
+});
 
 
 exerciseButton5.addEventListener('click', () => { 
-    let res = gen5rdNumber();
+    let res = genLowestNumber();
 
     answer5.textContent += `${res[0]} and the smallest number of this array is ${res[1]}`;
 });

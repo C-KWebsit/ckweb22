@@ -25,35 +25,30 @@ export function oddIndex(input2) {
 export function genAcrostic(input3) { 
     const poemArray = input3.value;
     const alphaLets = alphabetSoup;
-    // console.log(alphaLets);
-    // console.log(poemArray);
     const empArr = [];
 
     for (let i = 0; i < poemArray.length; i ++) {
         let letter = poemArray[i];
-        console.log(letter);
         let alphaWord = alphaLets[letter];
-        console.log(alphaWord);
         empArr.push(alphaWord);
     }
-
-
-
-
-
-    // const poemArray = input3; 
-    // let alphaObject = Object.entries(alphabetSoup);
-    // alphabetSoup.a;
-    // alphabetSoup['a'];
-
-    // let alphaLets = [];
-    // console.log(alphaLets.j);
-    // console.log(array[19]);
-
     return empArr;
 }
 
-export function gen5rdNumber() { 
+export function gen5rdElement() { 
+    const twentyArray = new Array(20);
+    let emptyArray = [];
+
+    for (let i = 0; i < twentyArray.length; i++) {
+        emptyArray.push(Math.floor(Math.random() * 50));
+    }
+    let fifthElement = emptyArray[5];
+
+    return [emptyArray, fifthElement];
+
+}
+
+export function genLowestNumber() { 
 
     const twentyArray = new Array(20);
     let randArray = [];
