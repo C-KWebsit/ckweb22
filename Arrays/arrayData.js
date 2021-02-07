@@ -5,7 +5,7 @@ export const arr1 = [
     { 'third': 'This is the third element of the array' },
     { 'fourth': 'This is the fourth element of the array' },
     { 'fifth': 'This is the fifth element of the array' },
-    { 'sixth': 'This is the first element of the array' } 
+    { 'sixth': 'This is the sixth element of the array' } 
 ];
 
 export const arr2 = [
@@ -17,7 +17,6 @@ export const arr2 = [
     true,
     false
 ];
-
 
 export const arr3 = [
     [22, 345, 34, 3, 1],
