@@ -28,5 +28,6 @@ arrButton.addEventListener('click', () => {
 });
 
 objButton.addEventListener('click', () => {
-    console.log('hi!');
+    document.location.href = 'Objects/objects.html';
+    
 });
