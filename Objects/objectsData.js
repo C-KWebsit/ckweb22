@@ -44,7 +44,7 @@ export const obj3 = {
     },
     'CC': {
         'username': 'cierra9',
-        'password': 'abc123',
+        'password': 'abc456',
         'security_question': 'cocoa',
         'sessions': [
             'date1',
@@ -59,7 +59,7 @@ export const obj3 = {
     },
     'cristian': {
         'username': 'cristian',
-        'password': 'abc123',
+        'password': 'abc789',
         'security_question': 'bandit',
         'sessions': [
             'date1',
@@ -69,7 +69,7 @@ export const obj3 = {
     },
     'halley': {
         'username': 'halley26',
-        'password': 'abc123',
+        'password': 'abc101',
         'security_question': 'smokey',
         'sessions': [
             'date1',
@@ -84,7 +84,7 @@ export const obj3 = {
     },
     'ali': {
         'username': 'ali',
-        'password': 'abc123',
+        'password': 'abc102',
         'security_question': 'jaxon',
         'sessions': [
             'date1',
