@@ -18,7 +18,7 @@ export function findObjectValues() {
     blueBowl = blueBowl.replace('[', '');
     blueBowl = blueBowl.replace(']', '');
     blueBowl = blueBowl.replace(/"/g, '\'');
-    console.log(blueBowl);
+    // console.log(blueBowl);
 
     return `The values of this object are: ${blueBowl}`; 
 
@@ -103,10 +103,7 @@ export function findPasswords() {
 
 export function enterUserName(input9) { 
     const thirdObj = obj3;
-    // console.log(thirdObj);
     const userInput = input9.value;
-    // console.log(userInput);
-    // let theUsername = '';
     let userPeople = Object.keys(thirdObj);
 
     for (let item of userPeople) { 
@@ -115,4 +112,44 @@ export function enterUserName(input9) {
         }   
     }
     return 'user not found' ; 
+}
+
+export function addToSessions(input10, input10_2) { 
+    const thirdObj = obj3; 
+    const userName = input10.value;
+    const userString = input10_2.value;
+    console.log(thirdObj);
+    console.log(userName, userString);
+    let userPeople = Object.keys(thirdObj);
+    console.log(userPeople);
+
+    for (let item of userPeople) { 
+        if (userName === thirdObj[item]['username']) { 
+            // alert(`hello ${userName}, please add something to your seeions?`);
+            let userSessions = thirdObj[item]['sessions'];
+            userSessions.push(userString);
+            console.log(thirdObj[item]);
+            return `${userName}, you have added ${userString} to your sessions, see you tomorrow!`;
+        }
+    }
+    return `Sorry, user not found, please try again`;
+
+}
+
+export function userAndPassword(input11, input11_2) {
+    const thirdObj = obj3; 
+    const userName = input11.value;
+    const userPass = input11_2.value;
+    let userPeople = Object.keys(thirdObj);
+
+    for (let item of userPeople) { 
+        if (userName === thirdObj[item]['username'])
+            // alert(`hello ${userName}, please put in your password`);
+            if (userPass === thirdObj[item]['password']) 
+                return thirdObj[item]['security_question'];
+    }
+    return `Sorry, user not found, please try again`;
+
+
+
 }

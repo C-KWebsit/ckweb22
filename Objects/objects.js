@@ -1,4 +1,4 @@
-import { findObjectKeys, findObjectValues, findFruitAndColor, findRedFruit, findVeggies, findTheFoods, findUsernames, findPasswords, enterUserName } from './object-utils.js';
+import { findObjectKeys, findObjectValues, findFruitAndColor, findRedFruit, findVeggies, findTheFoods, findUsernames, findPasswords, enterUserName, addToSessions, userAndPassword } from './object-utils.js';
 
 const exerciseButton1 = document.getElementById('submit1');
 const answer1 = document.getElementById('exercise-box-1');
@@ -27,6 +27,16 @@ const answer8 = document.getElementById('exercise-box-8');
 const exerciseButton9 = document.getElementById('submit9');
 const input9 = document.getElementById('input9');
 const answer9 = document.getElementById('exercise-box-9');
+
+const exerciseButton10 = document.getElementById('submit10');
+const input10 = document.getElementById('input10');
+const input10_2 = document.getElementById('uString');
+const answer10 = document.getElementById('exercise-box-10');
+
+const exerciseButton11 = document.getElementById('submit11');
+const input11 = document.getElementById('input11');
+const input11_2 = document.getElementById('uString11');
+const answer11 = document.getElementById('exercise-box-11');
 
 exerciseButton1.addEventListener('click', () => { 
     //  console.log('you can do all things');
@@ -87,5 +97,20 @@ exerciseButton9.addEventListener('click', () => {
     // console.log('yo yo yooooo');
 
     answer9.innerHTML += userNameCheck;
+
+});
+
+exerciseButton10.addEventListener('click', () => { 
+    const userAdd = addToSessions(input10, input10_2);
+
+    answer10.innerHTML += userAdd;
+
+});
+
+exerciseButton11.addEventListener('click', () => { 
+    const userPass = userAndPassword(input11, input11_2);
+    console.log('in the button');
+    answer11.innerHTML += userPass;
+
 
 });
